@@ -1,0 +1,35 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre": "santi Chein",
+    "dni": 233885345,
+    "email": "santichein@hotmail.com",
+    "domicilio": "españa 4093"
+
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+
+###
+GET http://localhost:3000/api/users/662ec902abff8b469cc44add HTTP/1.1
+
+
+###
+PUT  http://localhost:3000/api/users/662ec902abff8b469cc44add HTTP/1.1
+Content-Type: application/json
+
+
+{
+    "nombre": "ivan chein",
+    "dni": 42455456,
+    "email": "ivanchein@hotmail.com",
+    "domicilio": "españa 4093"
+}
+
+
+###
+DELETE http://localhost:3000/api/users/662ec76eabff8b469cc44ad7 HTTP/1.1
